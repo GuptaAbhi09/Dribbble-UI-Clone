@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fbfaf8;
+    color: #0d0c22;
+}
+#nav{
+    width: 100%;
+    height: 7.5vw;
+    font-family: "Mona Sans";
+    padding: 0 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3vw;
+}
+#nav img{
+    width: 6.8vw;
+}
+#nav .nav-items{
+    width: 35vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav .nav-items h3{
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 1.1vw;
+}
+.search-bar{
+    width: 31vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search{
+    width: 55%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding-left: 2vw;
+    border-radius: 40px;
+}
+.search i{
+    font-size: 1.3vw;
+    color: #0d0c22;
+}
+.search i:hover{
+    cursor: pointer;
+}
+.search input{
+    border: 0;
+    outline: 0;
+    padding-left: 0.8vw;
+    width: 90%;
+    font-size: 1.1vw;
+}
+.search-bar button{
+    padding: 1.1vw 1.5vw;
+    font-size: 1vw;
+    font-weight: 600;
+    border-radius: 40px;
+    border: 0;
+    outline: 0;
+}
+button:hover{
+    cursor: pointer;
+}
+.signup {
+    background-color: #0d0c22;
+    color: #fff;
+}
+.login{
+    background-color: transparent;
+    color: #0d0c22;
+}
+.center{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.center button{
+    width: fit-content;
+    padding: 1.5vw 2vw;
+    font-size: 1vw;
+    font-weight: 600;
+    border-radius: 40px;
+    border: 0;
+    outline: 0;
+    background-color: #0d0c22;
+    color: #fff;
+}
+.center h1{
+    font-size: 5.5vw;
+    font-weight: 400;
+    font-family: 'Source Serif 4';
+    line-height: 5.5vw;
+}
+.center h4{
+    font-size: 1.2vw;
+    font-family: 'Source Serif 4';
+    background-color: pink;
+    padding: 0.8vw 1.5vw;
+    border-radius: 40px;
+    margin-bottom: 3vw;
+}
+.center h3{
+    font-size: 1.3vw;
+    font-family: 'Source Serif 4';
+    background-color: #f8ffc0;
+    padding: 0.5vw 0.5vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+.scroller{
+    width: 100%;
+    height: 53vh;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.scroller-content{
+    height: 100%;
+    display: inline-block;
+    animation: scroll 60s linear infinite;
+}
+.scroller::-webkit-scrollbar{
+    display: none;
+}
+.scroller .scroller-content .image{
+    width: 20vw;
+    height: 100%;
+    display: inline-block;
+    border-radius: 30px;
+    margin-left: 2vw;
+    overflow: hidden;
+    position: relative;
+}
+.scroller .scroller-content .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.scroller .scroller-content .image video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bottom-text{
+    width: 100%;
+    height: 34%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(transparent, #000000);
+    color: #fff;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7vw;
+}
+.bottom-text h4{
+    font-size: 1vw;
+    font-family: 'Mona Sans';
+    font-weight: 600;
+}
+.bottom-text .works{
+    display: flex;
+    gap: 2.5vw;
+    margin-top: 0.4vw;
+}
+.bottom-text .works p{
+    padding: 0.5vw 0.8vw;
+    border: 0.8px solid #ffffffde;
+    border-radius: 25px;
+    font-size: 0.8vw;
+}
+@keyframes scroll {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-100%);
+    }
+}
+
+.explore-designs{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 8vw;
+}
+.explore-designs h1{
+    font-size: 3.8vw;
+    text-align: center;
+    font-family: 'Mona Sans';
+    color: black;
+}
+.designs{
+    min-height: 100vh;
+    margin-top: 4vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.5vw;
+}
+.design-template{
+    width: 22%;
+    height: 40vh;
+}
+.design-image{
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.hover-effect{
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(transparent,black);
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    padding: 0 1.5vw;
+    justify-content: space-between;
+    font-size: 1.2vw;
+    font-family: 'Mona Sans';
+    font-weight: 600;
+    opacity: 0;
+}
+.hover-effect i{
+    background-color: #fff;
+    color: black;
+    padding: 0.8vw;
+    border-radius: 50%;
+    font-weight: 500;
+}
+.hover-effect i:hover{
+    cursor: pointer;
+}
+.design-image:hover .hover-effect{
+    opacity: 1;
+    transition: all 0.5s;
+}
+.design-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.design-image video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.design-company{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1vw;
+}
+.design-company p{
+    font-weight: 500;
+    font-size: 1.2vw;
+}
+.design-company img{
+    border-radius: 50%;
+}
+.design-company img:hover{
+    cursor: pointer;
+}
+.design-company .icons{
+    display: flex;
+    gap: 0.3vw;
+    margin-left: 2.5vw;
+}
+.design-company .icons:hover{
+    cursor: pointer;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 3vw;
+}
+button{
+    width: fit-content;
+    padding: 1.5vw 1.8vw;
+    font-size: 1vw;
+    font-weight: 600;
+    border-radius: 40px;
+    border: 1.5px solid black;
+}
+.bottom-center{
+    width: 100%;
+    height: 110vh;
+    background-color: #ffda79;
+    margin-top: 8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;
+}
+.bottom-center h1{
+    font-size: 5vw;
+    width: 40%;
+    font-family: 'Source Serif 4';
+    font-weight: 400;
+    line-height: 5.5vw;
+    margin-top: 8vw;
+    text-align: center;
+}
+.bottom-center h3{
+    width: 45%;
+    font-size: 1.6vw;
+    line-height: 3vw;
+    text-align: center;
+    font-family: 'Mona Sans';
+}
+.bottom-center h3 a{
+    color: black;
+}
+.buttons{
+    display: flex;
+    gap: 1vw;
+}
+.buttons button{
+    border: 0;
+}
+.button1{
+    background-color: black;
+    color: #fff;
+}
+
+.bottom-scroller{
+    width: 100%;
+    height: 30vh;
+    margin-top: 5vw;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.scroller-container{
+    height: 100%;
+    display: inline-block;
+    animation: scroll 40s linear infinite;
+}
+.bottom-scroller::-webkit-scrollbar{
+    display: none;
+}
+.template{
+    width: 15vw;
+    height: 100%;
+    font-family: 'Mona Sans';
+    font-size: 1vw;
+    display: inline-block;
+    margin-left: 2vw;
+}
+.template:hover{
+    cursor: pointer;
+}
+.template h3{
+    margin-top: 0.8vw;
+}
+.template img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px rgb(184, 209, 217);
+}
+.top-bottom{
+    width: 100%;
+    height: 10vh;
+    margin-top: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+}
+.top-bottom img{
+    width: 8.5%;
+}
+.bottom-items{
+    width: 65%;
+    height: 100%;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 1.1vw;
+    margin-left: 3vw;
+    color: #0d0c22;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bottom-icons{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3vw;
+    font-size: 1.5vw;
+}
+.copyright{
+    width: 100%;
+    height: 18vh;
+    margin-top: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+}
+.copyright1{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #6e6d7a;
+    justify-content: space-between;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.1vw;
+}
+.copyright2{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #6e6d7a;
+    justify-content: space-between;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.1vw;
+}
