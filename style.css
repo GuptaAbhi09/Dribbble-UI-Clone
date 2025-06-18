@@ -445,3 +445,167 @@ button{
     font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.1vw;
 }
+
+@media (max-width: 768px) {
+  #nav {
+    flex-direction: column;
+    height: auto;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  #nav .nav-items,
+  .search-bar {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .nav-items h3 {
+    font-size: 4vw;
+  }
+
+  .search {
+    width: 90%;
+    height: 40px;
+  }
+
+  .search input {
+    font-size: 3.5vw;
+  }
+
+  .search i {
+    font-size: 4vw;
+  }
+
+  .search-bar button {
+    padding: 2vw 4vw;
+    font-size: 3vw;
+  }
+
+  .center h1 {
+    font-size: 10vw;
+    line-height: 11vw;
+    text-align: center;
+  }
+
+  .center h4,
+  .center h3 {
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  .center button {
+    font-size: 4vw;
+    padding: 2vw 4vw;
+  }
+
+  .scroller .scroller-content .image {
+    width: 60vw;
+    margin-left: 4vw;
+  }
+
+  .bottom-text h4 {
+    font-size: 3vw;
+  }
+
+  .bottom-text .works p {
+    font-size: 2.5vw;
+    padding: 1vw 2vw;
+  }
+
+  .explore-designs h1 {
+    font-size: 6vw;
+  }
+
+  .designs {
+    flex-direction: column;
+    align-items: center;
+    gap: 5vw;
+  }
+
+  .design-template {
+    width: 85%;
+    height: auto;
+  }
+
+  .hover-effect {
+    font-size: 4vw;
+    padding: 0 4vw;
+  }
+
+  .design-company {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1vw;
+  }
+
+  .design-company p {
+    font-size: 3vw;
+  }
+
+  .design-company .icons {
+    gap: 2vw;
+  }
+
+  .bottom-center {
+    height: auto;
+    padding: 5vw 2vw;
+  }
+
+  .bottom-center h1 {
+    font-size: 7vw;
+    width: 90%;
+  }
+
+  .bottom-center h3 {
+    font-size: 4vw;
+    width: 90%;
+    line-height: 6vw;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 2vw;
+  }
+
+  .buttons button {
+    font-size: 4vw;
+    padding: 2vw 4vw;
+  }
+
+  .bottom-scroller .template {
+    width: 40vw;
+    font-size: 3vw;
+  }
+
+  .top-bottom {
+    flex-direction: column;
+    height: auto;
+    gap: 2vw;
+  }
+
+  .bottom-items {
+    flex-wrap: wrap;
+    font-size: 3vw;
+    justify-content: center;
+  }    
+
+  .bottom-icons {
+    gap: 4vw;
+    font-size: 4vw;
+  }
+
+  .copyright {
+    flex-direction: column;
+    height: auto;
+    gap: 2vw;
+  }
+
+  .copyright1,
+  .copyright2 {
+    flex-wrap: wrap;
+    font-size: 3vw;
+    justify-content: center;
+  }
+}
